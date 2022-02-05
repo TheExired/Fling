@@ -38,7 +38,8 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 	end
 end)
 
-while wait(1) do
+game["Run Service"].Heartbeat:Connect(function()
+wait(1)
 	for q = 1, 255 do
 		wait()
 		selection.Color3 = Color3.new((255 - q)/255, q/255, 0/255)
@@ -51,5 +52,5 @@ while wait(1) do
 		wait()
 		selection.Color3 = Color3.new(e/255, 0/255, (255 - e)/255)
 	end
-end
+end)
 
