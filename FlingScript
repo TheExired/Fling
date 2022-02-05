@@ -38,19 +38,4 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 	end
 end)
 
-game["Run Service"].Heartbeat:Connect(function()
-wait(1)
-	for q = 1, 255 do
-		wait()
-		selection.Color3 = Color3.new((255 - q)/255, q/255, 0/255)
-	end
-	for w = 1, 255 do
-		wait()
-		selection.Color3 = Color3.new(0/255, (255 - w)/255, w/255)
-	end
-	for e = 1, 255 do
-		wait()
-		selection.Color3 = Color3.new(e/255, 0/255, (255 - e)/255)
-	end
-end)
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheExired/RainbowSelection/main/SelectionBox"))()
