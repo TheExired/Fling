@@ -7,7 +7,7 @@ end
 
 local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
 --selection.Color3 = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.Color
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TheExired/RainbowSelection/main/SelectionBox"))()
+selection.Color3 = Color3.new(255,255,255)
 selection.Adornee = selection.Parent
 
 
