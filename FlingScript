@@ -16,6 +16,8 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 --    Fling.CFrame = CFrame.new(mouse.hit.p)
 --end)
 
+local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
+
 local attackingwithhrp = false
 
 mouse.Button1Down:Connect(function()
@@ -34,3 +36,20 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 		Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
 	end
 end)
+
+game["Run Service"].Heartbeat:Connect(function()
+	for q = 1, 255 do
+		wait()
+		selection.Color3 = Color3.new((255 - q)/255, q/255, 0/255)
+	end
+	for w = 1, 255 do
+		wait()
+		selection.Color3 = Color3.new((255 - w)/255, w/255, 0/255)
+	end
+	for e = 1, 255 do
+		wait()
+		selection.Color3 = Color3.new((255 - e)/255, e/255, 0/255)
+	end
+end)
+
+
