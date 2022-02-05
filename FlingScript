@@ -6,7 +6,6 @@ else
 end
 
 local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
---selection.Color3 = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.Color
 selection.Color3 = Color3.new(0.356863, 0, 0.792157)
 selection.Adornee = selection.Parent
 
