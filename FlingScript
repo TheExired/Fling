@@ -17,6 +17,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 --end)
 
 local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
+selection.Color3 = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.Color
 selection.Adornee = selection.Parent
 
 local attackingwithhrp = false
@@ -38,4 +39,4 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 	end
 end)
 
-selection.BrickColor = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.BrickColor
+
