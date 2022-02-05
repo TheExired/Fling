@@ -4,6 +4,12 @@ else
 	_G.TorsoFling = false
 	_G.Fling = true
 end
+
+local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
+selection.Color3 = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.Color
+selection.Adornee = selection.Parent
+
+
 _G.ShowReal = true
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/NetlessReanimV2(ThanksProductionTakeOne%20%233330%20for%20help).lua"))()
 task.wait()
@@ -16,9 +22,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 --    Fling.CFrame = CFrame.new(mouse.hit.p)
 --end)
 
-local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
-selection.Color3 = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.Color
-selection.Adornee = selection.Parent
+
 
 local attackingwithhrp = false
 
