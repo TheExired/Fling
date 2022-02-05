@@ -38,4 +38,4 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 	end
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TheExired/RainbowSelection/main/SelectionBox"))()
+selection.BrickColor = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso.BrickColor
