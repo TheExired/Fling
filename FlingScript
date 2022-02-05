@@ -17,7 +17,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 --end)
 
 local selection = Instance.new("SelectionBox",game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
-selection.Adornee = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart
+selection.Adornee = selection.Parent
 
 local attackingwithhrp = false
 
